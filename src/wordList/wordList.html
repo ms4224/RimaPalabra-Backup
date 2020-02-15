@@ -1,0 +1,14 @@
+<input id="searchField" type="text" placeholder="palabra para rimar" ng-model="listCtrl.searchTerm"> <button
+	id="searchButton" ng-show="listCtrl.readyForSearch" ng-click="listCtrl.search()">Rima!</button>
+
+<div class="row">
+	<div class="col-xs-12 col-sm-9 col-md-9">
+		<div class="dictionary"></div>
+	</div>
+	<div class="col-xs-12 col-sm-3 col-md-3">
+		<div class="information">
+			<p class="you-searched">Searched: '{{listCtrl.latestSearch}}'</p>
+			<p class="closest-match">Closest Match: '{{listCtrl.closestMatch}}'</p>
+		</div>
+	</div>
+</div>

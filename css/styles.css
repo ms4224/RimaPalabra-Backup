@@ -1,0 +1,69 @@
+.rimador-page{
+	background-color:#F0F0F0;
+	height: 100%;
+}
+
+h1{
+	margin-bottom: 20px;
+}
+
+.intro{
+	font-size: 25px;
+	/*margin-bottom: 50px;*/
+}
+.disclaimer{
+	font-size: 18px;
+	color: red;
+	/*margin-bottom: 50px;*/
+}
+.dictionary{
+	position:relative;
+	/*min-height: 400px;*/
+	max-height: 400px;
+	background-color: #101010;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	/*margin-top: 20px;*/
+	border-radius: 5px;
+	border: 4px solid #404040;
+}
+
+.dictionary p{
+	margin: 2px;
+	font-family: 'Oxygen Mono', monospace;
+	color: white;
+	border-bottom: 1px solid #202020;
+}
+
+.information p{
+	font-size: 30px;
+	color: #600000;
+	font-family: 'Oxygen Mono', monospace;
+}
+
+p {
+	position:relative;
+
+}
+
+#searchField, #searchButton{
+	/*to fix the border not showing on the left*/
+	margin-left: 2px;
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+#searchField{
+	width: 65%;
+	font-family: 'Oxygen Mono', monospace;
+}
+
+
+
+.dictionary, .information {
+	margin-top: 20px;
+}
+
+#visitor-count{
+	color: 	#00FF00;
+}

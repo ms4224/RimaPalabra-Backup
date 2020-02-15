@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name=“description” content=“Rimador Tecnico para rimar palabras del deccionario entero castellano.  Best technical rhyming dictionary for the spanish language.”>
+     <meta name="keywords" content="Spanish, rhyming dictionary, rhymes, Spanish rhyming dictionary, diccionario, rima, español, diccionario de rima español, rima palabras, rima palabra, rimar">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
+
+    <title>Rimador Para Todas Las Palabras del Diccionario.  Spanish Rhyming Dictionary</title>
+  </head>
+
+  <body ng-app="rimador" class="rimador-page">
+  <rimador-header></rimador-header>
+  <!-- Main Body of Website -->
+  <div class="container-fluid ">
+  <ui-view>Loading...</ui-view>
+  <word-list></word-list>
+  </div>
+  <br><br><br>
+
+<!-- library files -->
+    <script src="lib/jquery-3.2.1.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+    <!-- utility source files -->
+    <script src="src/utilities/alphabetizedDictionaryConstant.js"></script>
+    <script src="src/utilities/alphabetizedV2AccentsEqual.js"></script>
+    <script src="src/utilities/trie.js"></script>
+    <!-- angular components files -->
+    <script src="src/rimador.module.js"></script>
+    <script src="src/rimador.routes.js"></script>
+    <script src="src/rimador.getListService.js"></script>
+    <script src="src/rimador.serverService.js"></script>
+    <script src="src/home/home.controller.js"></script>
+    <script src="src/header/header.component.js"></script>
+    <script src="src/header/header.controller.js"></script>
+    <script src="src/wordList/wordList.functions.js"></script>
+    <script src="src/wordList/wordList.component.js"></script>
+    <script src="src/wordList/wordList.controller.js"></script>
+
+  </body>
+
+</html>
